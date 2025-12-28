@@ -56,6 +56,45 @@
     .contact-button:hover {
         background-color: #1557b0; /* Gets darker when you touch it */
     }
+    /* Style for the Progress Bars */
+    .skill-container {
+        margin-bottom: 20px;
+    }
+
+    .progress-bg {
+        background-color: #e8f0fe; /* Light blue background */
+        border-radius: 10px;
+        overflow: hidden; /* Keeps the fill inside the rounded corners */
+    }
+
+    .progress-fill {
+        background-color: #34a853; /* Success Green color */
+        color: white;
+        padding: 5px 15px;
+        text-align: right;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 10px 0 0 10px;
+    }
+   /* Final Styling for Portfolio and Goals */
+    .project-box {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    .goal-tag {
+        display: inline-block;
+        background-color: #fbbc05; /* Bright Gold for Goals */
+        color: #000;
+        padding: 5px 15px;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: 0.85rem;
+        font-weight: bold;
+    } 
 </style>
 </head>
 <body>
@@ -68,6 +107,31 @@
     <section>
         <h2>About Me</h2>
         <p>I am a 2nd-year BE CSE student. I am building this project to track my path to a high-paying job.</p>
+        <section id="skills">
+        <h2>My Technical Skills</h2>
+        <p>A glimpse of what I am mastering in my 2nd year of CSE.</p>
+
+        <div class="skill-container">
+            <p>C++ Programming</p>
+            <div class="progress-bg">
+                <div class="progress-fill" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>Python & Logic</p>
+            <div class="progress-bg">
+                <div class="progress-fill" style="width: 70%;">70%</div>
+            </div>
+        </div>
+
+        <div class="skill-container">
+            <p>Git & GitHub (Professional Tools)</p>
+            <div class="progress-bg">
+                <div class="progress-fill" style="width: 95%;">95%</div>
+            </div>
+        </div>
+    </section>
     </section>
 
     <section>
@@ -78,6 +142,29 @@
         <input type="checkbox"> Build 3 Real-World Projects<br>
         <input type="checkbox"> Maintain 8.5+ CGPA<br>
         <input type="checkbox"> Practice Mock Interviews<br>
+    </section>
+    <section id="portfolio">
+        <h2>My Career Portfolio</h2>
+
+        <h3>🎓 College Lab Work</h3>
+        <ul>
+            <li><strong>C++ Basics:</strong> Solved 20+ logic problems (Arrays, Loops, Strings).</li>
+            <li><strong>Data Structures:</strong> Implementing Stacks and Queues in the lab.</li>
+        </ul>
+
+        <h3>💻 Personal Projects</h3>
+        <div class="project-box">
+            <strong>Mini Calculator:</strong> A simple app to perform basic math operations.
+        </div>
+        <div class="project-box">
+            <strong>Unit Converter:</strong> Converts Kilometers to Miles and Celsius to Fahrenheit.
+        </div>
+
+        <h3>🚀 My Next 3 Big Goals</h3>
+        <p>By the end of my 2nd year, I will master:</p>
+        <span class="goal-tag">Artificial Intelligence (AI)</span>
+        <span class="goal-tag">Full Stack Development</span>
+        <span class="goal-tag">Interview Communication</span>
     </section>
 <section id="contact">
         <h2>Connect With Me</h2>
